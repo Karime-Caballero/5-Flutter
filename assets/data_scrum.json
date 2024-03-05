@@ -1,31 +1,34 @@
 [
+  
+  {
+    "name": "Sprint",
+    "description": "Un sprint es un período breve de tiempo fijo en el que un equipo de scrum trabaja para completar una cantidad de trabajo establecida. Los sprints se encuentran en el corazón de las metodologías scrum y ágil, y hacer bien los sprints ayudará a tu equipo ágil a lanzar mejor software con menos quebraderos de cabeza.",
+    "image": "assets/sprint.png",
+    "example": "En nuestro sprint de dos semanas, nuestro objetivo es completar las historias de usuario a las que nos hemos comprometido, asegurándonos de que cumplan con nuestra Definición de Listo."
+  },
+  
+  {
+    "name": "Scrum Diario",
+    "description": "La Daily Scrum Meeting es una reunión (evento) de Scrum de corta duración, unos 15 minutos, que debería ocurrir todos los días del Sprint y siempre a la misma hora. El objetivo buscado a través de las reuniones diarias es promover la comunicación y la transparencia dentro del equipo.",
+    "image": "assets/daily_scrum.png",
+    "example": "Durante nuestro Scrum Diario, cada miembro del equipo comparte lo que logró ayer, lo que planea hacer hoy y cualquier obstáculo que enfrenten."
+  },
   {
     "name": "Backlog de Producto",
     "description": "Una lista priorizada de todo lo que podría ser necesario en el producto y es la única fuente de requisitos para cualquier cambio que se realice en el producto.",
     "image": "assets/product-backlog.png",
     "example": "Como Propietario de Producto, quiero tener una lista clara de características para mi producto, para poder comunicarme eficazmente con los interesados y el equipo de desarrollo."
   },
-  {
-    "name": "Sprint",
-    "description": "Un período de desarrollo con límite de tiempo durante el cual se crea un incremento potencialmente entregable del producto.",
-    "image": "assets/sprint.png",
-    "example": "En nuestro sprint de dos semanas, nuestro objetivo es completar las historias de usuario a las que nos hemos comprometido, asegurándonos de que cumplan con nuestra Definición de Listo."
-  },
-  {
-    "name": "Scrum Diario",
-    "description": "Un evento con una duración de 15 minutos para que el Equipo de Desarrollo sincronice actividades y cree un plan para las próximas 24 horas.",
-    "image": "assets/daily_scrum.png",
-    "example": "Durante nuestro Scrum Diario, cada miembro del equipo comparte lo que logró ayer, lo que planea hacer hoy y cualquier obstáculo que enfrenten."
-  },
+ 
   {
     "name": "Propietario de Producto",
-    "description": "La persona responsable de maximizar el valor del producto y el trabajo del Equipo de Desarrollo.",
+    "description": "La persona responsable de maximizar el valor del producto y el trabajo del Equipo de Desarrollo,a persona de referencia en el equipo de desarrollo del producto y utiliza su perspectiva de alto nivel para definir los objetivos y crear una visión para los proyectos de desarrollo.",
     "image": "assets/product_owner.png",
     "example": "Como Propietario de Producto, trabajo en estrecha colaboración con los interesados para entender sus necesidades y priorizar el backlog para entregar el máximo valor."
   },
   {
     "name": "Scrum Master",
-    "description": "El líder-sirviente del Equipo Scrum, responsable de garantizar que se comprenda y se cumpla Scrum.",
+    "description": "El líder-sirviente del Equipo Scrum, responsable de garantizar que se comprenda y se cumpla Scrum, Scrum es un marco de administración que los equipos utilizan para organizarse por cuenta propia y trabajar en aras de alcanzar un objetivo común. Describe un conjunto de reuniones, herramientas y funciones para entregar proyectos de forma eficiente",
     "image": "assets/scrum_master.png",
     "example": "Como Scrum Master, facilito los eventos de Scrum, elimino impedimentos y entreno al equipo para mejorar continuamente."
   },
@@ -48,15 +51,9 @@
     "example": "Durante nuestra Retrospectiva del Sprint, reflexionamos sobre lo que salió bien, lo que podría mejorarse y nos comprometemos a realizar cambios para el próximo Sprint."
   },
   {
-    "name": "Definición de Listo",
-    "description": "Un entendimiento compartido de lo que significa que el trabajo esté completo y potencialmente entregable.",
-    "image": "assets/definition_of_done.png",
-    "example": "Nuestra Definición de Listo incluye cumplir con todos los criterios de aceptación, revisión de código, pruebas automatizadas y documentación."
-  },
-  {
     "name": "Historia de Usuario",
     "description": "Una breve descripción de una característica contada desde la perspectiva de la persona que desea la nueva capacidad.",
-    "image": "assets/histo.png",
+    "image": "assets/histo.jpeg",
     "example": "Como usuario, quiero poder iniciar sesión con mi correo electrónico y contraseña, para poder acceder a funciones personalizadas."
   }
 ]

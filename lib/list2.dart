@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'item.dart'; 
+import 'item.dart';
 
 class JsonListViewScreen2 extends StatefulWidget {
   const JsonListViewScreen2({Key? key}) : super(key: key);
@@ -20,8 +20,8 @@ class _JsonListViewScreenState2 extends State<JsonListViewScreen2> {
 
   Future<List<ScrumItem>> loadItems() async {
     try {
-      String jsonString =
-          await DefaultAssetBundle.of(context).loadString('assets/data_scrum.json');
+      String jsonString = await DefaultAssetBundle.of(context)
+          .loadString('assets/data_scrum.json');
       List<dynamic> jsonList = json.decode(jsonString);
       return jsonList.map((item) => ScrumItem.fromJson(item)).toList();
     } catch (e) {
@@ -37,10 +37,10 @@ class _JsonListViewScreenState2 extends State<JsonListViewScreen2> {
         title: Center(
           child: Text(
             'Uso de archivos JSON',
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Color.fromARGB(255, 223, 222, 228)),
           ),
         ),
-        backgroundColor: Colors.orange,
+        backgroundColor: const Color.fromARGB(255, 51, 0, 255),
       ),
       body: FutureBuilder<List<ScrumItem>>(
         future: _itemsFuture,
@@ -48,7 +48,8 @@ class _JsonListViewScreenState2 extends State<JsonListViewScreen2> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
               child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Colors.orange),
+                valueColor: AlwaysStoppedAnimation<Color>(
+                    Color.fromARGB(255, 56, 7, 146)),
               ),
             );
           } else if (snapshot.hasError) {
@@ -66,13 +67,14 @@ class _JsonListViewScreenState2 extends State<JsonListViewScreen2> {
                     print('Elemento presionado: ${items[index].name}');
                   },
                   child: Card(
-                    color: Colors.orange[50],
+                    color: Color.fromARGB(255, 13, 29, 81),
                     elevation: 2,
                     margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     child: ListTile(
                       title: Text(
                         items[index].name,
-                        style: TextStyle(color: Colors.orange[900]),
+                        style: TextStyle(
+                            color: Color.fromARGB(255, 234, 233, 241)),
                       ),
                     ),
                   ),

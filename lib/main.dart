@@ -22,7 +22,7 @@ class MainApp extends StatelessWidget {
             ),
           ),
           centerTitle: true, // Centrar el título
-          backgroundColor: Colors.orange, // Color de fondo
+          backgroundColor: Color.fromARGB(255, 12, 28, 173), // Color de fondo
           elevation: 0, // Eliminar sombra
         ),
         body: Row(

@@ -39,7 +39,8 @@ class _JsonListViewScreenState extends State<JsonListViewScreen> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
               child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Colors.orange),
+                valueColor: AlwaysStoppedAnimation<Color>(
+                    Color.fromARGB(255, 56, 6, 121)),
               ),
             );
           } else if (snapshot.hasError) {
@@ -52,13 +53,14 @@ class _JsonListViewScreenState extends State<JsonListViewScreen> {
               itemCount: items!.length,
               itemBuilder: (BuildContext context, int index) {
                 return Card(
-                  color: Colors.orange[50],
+                  color: Color.fromARGB(255, 48, 24, 125),
                   elevation: 2,
                   margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   child: ExpansionTile(
                     title: Text(
                       items[index].name,
-                      style: TextStyle(color: Colors.orange[900]),
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 236, 235, 237)),
                     ),
                     children: [
                       Padding(
@@ -69,7 +71,7 @@ class _JsonListViewScreenState extends State<JsonListViewScreen> {
                             Text(
                               'Descripción:',
                               style: TextStyle(
-                                color: Colors.black87,
+                                color: const Color.fromARGB(221, 251, 249, 249),
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -78,7 +80,7 @@ class _JsonListViewScreenState extends State<JsonListViewScreen> {
                             Text(
                               items[index].description,
                               style: TextStyle(
-                                color: Colors.black87,
+                                color: const Color.fromARGB(221, 245, 243, 243),
                                 fontSize: 18,
                                 fontStyle: FontStyle.italic,
                               ),
@@ -88,7 +90,7 @@ class _JsonListViewScreenState extends State<JsonListViewScreen> {
                             Text(
                               'Ejemplo:',
                               style: TextStyle(
-                                color: Colors.orange,
+                                color: Color.fromARGB(255, 10, 84, 149),
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -97,7 +99,7 @@ class _JsonListViewScreenState extends State<JsonListViewScreen> {
                             Text(
                               items[index].example,
                               style: TextStyle(
-                                color: Colors.black87,
+                                color: const Color.fromARGB(221, 248, 246, 246),
                                 fontSize: 18,
                                 fontStyle: FontStyle.italic,
                               ),
@@ -107,7 +109,8 @@ class _JsonListViewScreenState extends State<JsonListViewScreen> {
                             // Agregamos la imagen desde la URL
                             Image.network(
                               items[index].image,
-                              width: 200, // Ancho de la imagen al ancho de la pantalla
+                              width:
+                                  200, // Ancho de la imagen al ancho de la pantalla
                             ),
                           ],
                         ),
